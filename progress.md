@@ -26,6 +26,8 @@
 | 报告与展示 | C 结果分析已验收；全文定稿与展示待完成 | report/C_results_evaluation.md、4 张图与4份CSV已合并；原技术报告草稿按用户要求删除，D 根据 B/C 已交付内容及运行、标注、试用证据统稿，真人验证不虚填 |
 | GitHub | 已公开，可直接查看和克隆 | [项目仓库](https://github.com/kanekikenny/sdsc6021-synthetic-data-toolkit)，分支 main；已核验 private=false、未登录读取 README 返回 200；未授予额外直接写入权限 |
 
+2026-11-16 非作者试用准备完成：实际CUDA矩阵运算通过，六个模型权重文件存在且大小与原校验记录一致，五个真实训练批次已缓存，冻结CLI源码与封存记录一致；本次未重复计算大权重SHA，也未运行试用plan/smoke。已为现场参与者建立独立试用目录，状态为prepared_not_started，代号及非开发者身份等待本人记录，起止时间和结果均未预填；[准备记录](shared/synthetic_v2/audits/non_author_trial_preflight.json)。
+
 ## 本轮范围与后续关卡
 
 1. G1 已完成：固定权重完整性、实际 CUDA 运算、512×512 单图生成、十类 CLIP 打分和 ResNet 特征均有证据。

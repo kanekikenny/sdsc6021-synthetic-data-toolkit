@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "prepared_not_started",
+  "prepared_utc": "2026-11-16T18:36:50.660644+08:00",
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "torch": "2.9.1+cu128",
+    "torchvision": "0.24.1+cu128",
+    "diffusers": "0.35.2",
+    "transformers": "4.57.6"
+  },
+  "cuda_operation_passed": true,
+  "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "gpu_status_csv": "NVIDIA GeForce RTX 5070 Ti Laptop GPU, 2807 MiB, 12227 MiB, 0 %",
+  "model_weight_presence_and_size_checks": [
+    {
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "file": "safety_checker/model.fp16.safetensors",
+      "bytes": 608018440,
+      "present_and_size_matches_prior_verified_file": true
+    },
+    {
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "file": "text_encoder/model.fp16.safetensors",
+      "bytes": 246144864,
+      "present_and_size_matches_prior_verified_file": true
+    },
+    {
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "file": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 1719125304,
+      "present_and_size_matches_prior_verified_file": true
+    },
+    {
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "file": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 167335342,
+      "present_and_size_matches_prior_verified_file": true
+    },
+    {
+      "model_id": "openai/clip-vit-base-patch32",
+      "file": "pytorch_model.bin",
+      "bytes": 605247071,
+      "present_and_size_matches_prior_verified_file": true
+    },
+    {
+      "model_id": "torchvision/resnet18",
+      "file": "resnet18-f37072fd.pth",
+      "bytes": 46830571,
+      "present_and_size_matches_prior_verified_file": true
+    }
+  ],
+  "weight_sha256_rechecked_this_preflight": false,
+  "weight_integrity_reference": "shared/g1_environment/check.json",
+  "training_batch_files_present": 5,
+  "frozen_cli_source_hashes_match_model_seal": true,
+  "model_seal_sha256_before": "a608c3dc8c2c6f190e4a2293c346e5ecc3ae2ba45e057123aac5108ea4e4f34e",
+  "config_file_sha256_before": "856531ef74e533060ad7146cc41208242b0a9b8d84c769342b34312b1e33e707",
+  "scope": "Organizer preparation only. No trial plan/smoke command, generation, training or evaluation was run.",
+  "local_trial_dir": "runs/synthetic_v2/audits/non_author_trial/20261116T103650_660644Z"
+}
