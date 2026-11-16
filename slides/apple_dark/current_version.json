@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "restored_from_verified_published_version",
+  "restored_at": "2026-11-17T00:21:19.744282+08:00",
+  "target_commit": "28841a6e71faa329c6f10811594ce279cbbf8f79",
+  "replaced_head": "923acbaeccffc1ce3def8b359d374ac5a0256b22",
+  "later_versions_preserved": true,
+  "local_backup_directory": "runs/_cache/apple_dark_presentation/restorations/20261117T002119+0800",
+  "scope": "Restore only the two presentation deliverables. Later commits remain in Git history. Other user edits remain untouched.",
+  "pdf_pages": 12,
+  "files": [
+    {
+      "path": "slides/apple_dark/SDSC6021_Apple_Dark_SFPro_Team.pptx",
+      "before_sha256": "aca65f3cab7eac746932e2ad2e74d15b335e79a90c1d43a90b5b29270c279aa9",
+      "restored_sha256": "9b8fa0a58f8acd6eac83a9445152fc3173f43874498f967fe2b236f8fcc227b5",
+      "restored_bytes": 2263050
+    },
+    {
+      "path": "slides/apple_dark/group_1_60934261_60995659_60287274_61038255.pdf",
+      "before_sha256": "210f294b243236c2da75236b26d5fda6e9583b00badea4b43076731f46d83160",
+      "restored_sha256": "c4536425fe03f3addf1c50289b25cd28a7582e65c1cde5f2cfb53e6c1998d5ba",
+      "restored_bytes": 516466
+    }
+  ]
+}
