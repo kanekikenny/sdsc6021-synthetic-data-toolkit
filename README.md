@@ -2,7 +2,7 @@
 
 面向 20-shot 图像分类的合成数据增强工具：生成补充图片、选择样本、训练分类器，并评估真实测试效果。
 
-> 当前：G4 正式评估与预测交接已完成。15 个封存分类器和一次 CLIP 参考共 160,000 条正式测试预测，连同运行记录已公开并验证下载。[C 的 G4 数据入口](shared/synthetic_v2/g4/README.md)说明约 4 MB 预测包的下载、字段和后续统计任务；[G3 入口](shared/synthetic_v2/README.md)保留图片、特征与模型。C 的独立分析、4图、4表及英文结果稿已验收合并，见 [结果入口](shared/synthetic_v2/c_evaluation/README.md)。A、D 两份100图标注已接收并核验，类别判断一致率100%，见[标注结果入口](shared/synthetic_v2/audits/human_annotations/README.md)；非作者试用及最终报告/展示统稿待完成，实际进度见 progress.md。
+> 当前：G4 正式评估与预测交接已完成。15 个封存分类器和一次 CLIP 参考共 160,000 条正式测试预测，连同运行记录已公开并验证下载。[C 的 G4 数据入口](shared/synthetic_v2/g4/README.md)说明约 4 MB 预测包的下载、字段和后续统计任务；[G3 入口](shared/synthetic_v2/README.md)保留图片、特征与模型。C 的独立分析、4图、4表及英文结果稿已验收合并，见 [结果入口](shared/synthetic_v2/c_evaluation/README.md)。A、D 两份100图标注已接收并核验，类别判断一致率100%，见[标注结果入口](shared/synthetic_v2/audits/human_annotations/README.md)；最终演示材料已交付；非作者试用、最终报告和真人排练待完成，实际进度见 progress.md。
 
 ## 阅读入口
 
@@ -14,6 +14,7 @@
 - [B 独立复核](shared/b_v04_review/README.md)与 [C 选择/统计规则审计](shared/synthetic_v2/c_independent_audit.md)：已合并的队友成果；B 数值差异和原阈值保留，C 的真实预测分析与图表见下方结果入口。
 - [B 对 C 正式 G4 统计的交叉复核](shared/b_c_g4_review/README.md)：PR #5 已实际复跑验收，16万条预测及四表250个数值项核对通过；原严格特征复现限制保留。
 - [作者自测与可读结果说明](shared/synthetic_v2/audits/author_self_test/README.md)：工程复现通过，补充条件、分母、损失拆分及解释边界；本次不计为非作者试用，外部易用性仍未验证。
+- [最终演示PDF、可编辑PPTX和讲稿](slides/README.md)：8页正文按4分30秒安排，另有4页问答备份；演讲上限5分钟，实际排练待团队完成。
 - [团队分工](分工.md)：A–D 工作包及必须交出的产物；具体成员认领和实际完成情况仍以 progress.md 为准。
 
 本文件只用于入门导航；详细协议只维护在 agent.md，运行状态只维护在 progress.md。

@@ -35,6 +35,7 @@ DSC6021_Final_Project_总结.md
 *.pdf
 # 项目自己的最终报告 PDF 可以作为交付文件共享
 !report/*.pdf
+!slides/final/*.pdf
 
 # 本机凭据；仅允许无真实凭据的示例文件
 .env

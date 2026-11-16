@@ -1,0 +1,42 @@
+{
+  "pages": 12,
+  "main_slides": 8,
+  "backup_slides": 4,
+  "script_words": 437,
+  "planned_seconds": 270,
+  "time_limit_seconds": 300,
+  "actual_human_rehearsal_timed": false,
+  "numeric_text_checks_passed": true,
+  "source": "Native PowerPoint PDF export, metadata normalized with pypdf",
+  "files": {
+    "SDSC6021_Final_Presentation.pdf": {
+      "bytes": 484360,
+      "sha256": "1f363d69cfd56a5e0cb72208bdf55e4b5cef2a16da67d8fd0c2661332f7e75b7"
+    },
+    "SDSC6021_Final_Presentation.pptx": {
+      "bytes": 1416532,
+      "sha256": "5260059c055320c295b1e8956c4cc131914df4a51ee15e395a71962ef81f4e24"
+    }
+  },
+  "schema_version": 1,
+  "status": "local_verified_ready_for_github_sync",
+  "language": "English",
+  "team_roles_basis": "User confirmed the A-D allocation table. Full names/student IDs were not supplied.",
+  "author_self_test": "../shared/synthetic_v2/audits/author_self_test/README.md",
+  "external_user_trial_demonstrated": false,
+  "official_experiment_changed": false,
+  "editable_charts": 2,
+  "editable_tables": 6,
+  "embedded_chart_workbooks": 2,
+  "speaker_notes_pages": 12,
+  "all_pdf_pages_visually_inspected": true,
+  "native_powerpoint_open_and_export_passed": true,
+  "content_sources_verified": true,
+  "private_validation_receipt": "runs/_cache/presentation_build/validation.json",
+  "limitations": [
+    "Timing is a 270-second plan for 437 English words, not a human rehearsal measurement.",
+    "Present slides 1-8 only. Slides 9-12 are backup for questions.",
+    "Final team technical report and personal metadata remain separate tasks.",
+    "Author self-test shutdown/total-duration metadata remain incomplete."
+  ]
+}
