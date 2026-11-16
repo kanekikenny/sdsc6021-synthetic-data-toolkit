@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "checked_utc": "2026-11-16T09:59:34.341172+00:00",
+  "source_forms": 2,
+  "source_records_each": 100,
+  "all_source_cells_and_free_text_preserved": true,
+  "original_workbooks_unchanged": true,
+  "archived_workbooks_match_receipts": true,
+  "paired_rows": 100,
+  "observed_agreement_percent": 100.0,
+  "disposable_controls": {
+    "one_changed_answer_produces_99_agreements": true,
+    "blank_answer_rejected": true,
+    "scope": "Implementation checks only; no actual human answers were changed."
+  },
+  "analysis_script_sha256": "021bae06d9e0f4fb5a8020069c45a298ccc9f2cd762187298a328c2b7411bb2e",
+  "frozen_experimental_sources_and_16_g4_predictions_unchanged": true,
+  "scope": "Intake and tabulation of two submitted forms; no direct verification of independent completion or usability trial."
+}

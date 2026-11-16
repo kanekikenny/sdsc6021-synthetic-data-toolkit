@@ -2,7 +2,7 @@
 
 协议 `0.4-frozen`，执行代码 `c5763166b2fe752e2257e7fb35039dc3ac1e0be7`；配置 SHA-256 为 `5380e7f962bb3646c6ff81148dd3d3ff2f96d1af97f008a774454af03eacd5ad`。
 
-本页说明 G3 产物如何使用，项目规则仍以根目录 agent.md 为准。**G4 正式测试现已完成，[正式预测交接入口](g4/README.md)提供实际 CSV/JSON 及运行记录。**C 的独立统计/图表已验收；首位100图标注已接收，第二份标注及非作者试用待接收；原 G3 Release 保留当时快照。
+本页说明 G3 产物如何使用，项目规则仍以根目录 agent.md 为准。**G4 正式测试现已完成，[正式预测交接入口](g4/README.md)提供实际 CSV/JSON 及运行记录。**C 的独立统计/图表已验收；两份100图标注已接收并核验，类别判断一致率100%，非作者试用待接收；原 G3 Release 保留当时快照。
 
 ## 下载什么
 
@@ -81,5 +81,5 @@ print(x.shape, ids[:4], logits.shape)
 - [handoff_restore_check.json](handoff_restore_check.json)：所有图像归档、3,001 个包内文件校验、便携特征一致性、15 个模型输出复核。
 - [stage_costs.json](stage_costs.json)：正式候选池生产约 42.52 分钟（含旧运行失败和恢复），选择约 39.97 秒、特征约 69.53 秒、15 个分类头约 8.42 秒。生成/特征使用单卡，分类头使用 CPU；不包含环境下载、G2、诊断、人工审阅、开发及传输，不能当作项目总耗时。
 - 原失败日志和迁移关系保留；9 个安全标记均有绑定同一原图 SHA 的安全审阅记录。这不替代两人标签正确性抽查。
-- 首位标注者已完成100图判断：[原始CSV](audits/human_annotations/annotator_1.csv)、[接收记录](audits/human_annotations/annotator_1_intake.json)及[备注说明](audits/human_annotations/说明.md)。第二份标注待接收；[非作者试用模板](audits/non_author_trial_template.json)仍为空。
+- 两份标注已接收：[标注结果入口](audits/human_annotations/README.md)提供A/D原始CSV、接收记录、100图配对表和一致率；类别判断一致100/100，备注分别30/24条，不代表整体质量均合格。[非作者试用模板](audits/non_author_trial_template.json)仍为空。
 - 包内环境记录仅隐去原电脑解释器绝对路径，包版本与源码摘要保持原样。打包时的 `local_only_not_delivered` 描述当时状态；附件发布后的访问状态以本目录 artifacts.json 为准，不改写原始运行证据。

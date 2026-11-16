@@ -2,7 +2,7 @@
 
 > 唯一实际进度记录；项目定义、实验协议、验收与内容框架统一见 [agent.md](agent.md)。
 
-更新日期：2026-11-16（Asia/Singapore）。当前阶段：**G4 正式评估及预测交接完成；15 个封存分类器和一次 CLIP 参考共 160,000 条官方测试预测，约 4 MB 的 CSV/JSON 与运行记录包已公开并完整下载核验。C 的正式预测独立统计、4 表、4 图及英文结果报告已验收并合并；首位标注者的100图判断已接收；第二位标注、非作者试用和最终统稿/展示待完成。B #3/#5 与 C #2 已合并，新增统计复核通过，原文档冲突已整合，21 项协议检查和两个 C 审计脚本通过；旧 B #1 保持关闭未合并**。
+更新日期：2026-11-16（Asia/Singapore）。当前阶段：**G4 正式评估及预测交接完成；15 个封存分类器和一次 CLIP 参考共 160,000 条官方测试预测，约 4 MB 的 CSV/JSON 与运行记录包已公开并完整下载核验。C 的正式预测独立统计、4 表、4 图及英文结果报告已验收并合并；A、D两份100图标注已接收并核验，类别判断一致率100%；非作者试用和最终统稿/展示待完成。B #3/#5 与 C #2 已合并，新增统计复核通过，原文档冲突已整合，21 项协议检查和两个 C 审计脚本通过；旧 B #1 保持关闭未合并**。
 
 ## 当前状态
 
@@ -22,7 +22,7 @@
 | 15 个正式模型与最终评估 | 正式评估完成 | 15 个原封存模型和一次 CLIP 参考均评估官方 10000 图；16 份原始预测、共 160000 行；SHA、ID、标签一致，逐条件/分类别准确率及配对统计已从预测复算核对；[G4 入口](shared/synthetic_v2/g4/README.md) |
 | A 交接包 | 完成，已公开交付 | 十个图片 ZIP、便携训练包和 100 图盲化抽查包；共 16 附件、962474961 字节，服务端 SHA-256 全匹配；全部匿名访问成功，训练包完整下载哈希一致；[交接入口](shared/synthetic_v2/README.md) |
 | B 对 C 的统计交叉复核 | PR #5 已复跑验收并合并 | 16万预测、64行表格及250个数值项通过；三份全精度CSV及逐模型计数与提交一致，两个负面对照均检出错误；[验收记录](shared/synthetic_v2/audits/b_pr5_acceptance.json)；原B特征严格数值失败保留 |
-| 真人标注 | 首位100图已接收；第二份待接收 | correct=100、wrong=0、uncertain=0，30条备注；原Excel保留，编号/类别/路径和所有填写内容逐项核对；[接收记录](shared/synthetic_v2/audits/human_annotations/annotator_1_intake.json) |
+| 真人标注 | 两份100图已接收；基础统计完成 | A、D各correct=100、wrong=0、uncertain=0；备注分别30/24条，类别判断一致100/100；kappa未定义，非整体质量合格率；[结果入口](shared/synthetic_v2/audits/human_annotations/README.md) |
 | 报告与展示 | C 结果分析已验收；全文定稿与展示待完成 | report/C_results_evaluation.md、4 张图与4份CSV已合并；原技术报告草稿按用户要求删除，D 根据 B/C 已交付内容及运行、标注、试用证据统稿，真人验证不虚填 |
 | GitHub | 已公开，可直接查看和克隆 | [项目仓库](https://github.com/kanekikenny/sdsc6021-synthetic-data-toolkit)，分支 main；已核验 private=false、未登录读取 README 返回 200；未授予额外直接写入权限 |
 
@@ -33,7 +33,7 @@
 3. G3 已依次完成 generate/select/features/train/summarize；[验收摘要](shared/synthetic_v2/check.json)、[封存清单](shared/synthetic_v2/models/frozen.json)、[还原核验](shared/synthetic_v2/handoff_restore_check.json) 有实际证据。
 4. A 的 GitHub 交接完成：[公开 Release](https://github.com/kanekikenny/sdsc6021-synthetic-data-toolkit/releases/tag/g3-synthetic-v2-v0.4)。队友从 [交接说明](shared/synthetic_v2/README.md) 取所需文件；[附件索引](shared/synthetic_v2/release_assets.json)和[匿名下载证明](shared/synthetic_v2/public_download_check.json)保存实际地址、哈希及检查记录。当前工程与生成范围无待运行作业。
 5. 用户本轮明确要求运行 G4 并向 C 同步预测与运行记录；已于 2026-11-15 21:34–21:38 +08:00 在 A 的 GPU 上完成，CLI 墙钟 221.52 秒，评估器内部 219.36 秒。原模型封存 SHA 未变，测试只使用基础视图；[结果与校验](shared/synthetic_v2/g4/README.md)包含完整 CSV/JSON、硬件/包版本、命令、时间、退出码和哈希。
-6. [G4 Release](https://github.com/kanekikenny/sdsc6021-synthetic-data-toolkit/releases/tag/g4-official-evaluation-v0.4)已公开；预测包和校验清单均经未登录完整下载、SHA-256 核对。[交付索引](shared/synthetic_v2/g4/delivery.json)与[下载证明](shared/synthetic_v2/g4/public_download_check.json)保存实际位置。C 已完成独立统计与图表，并以 PR #4 交付；首位标注者已提交100图判断；第二份标注及非作者试用仍待接收。
+6. [G4 Release](https://github.com/kanekikenny/sdsc6021-synthetic-data-toolkit/releases/tag/g4-official-evaluation-v0.4)已公开；预测包和校验清单均经未登录完整下载、SHA-256 核对。[交付索引](shared/synthetic_v2/g4/delivery.json)与[下载证明](shared/synthetic_v2/g4/public_download_check.json)保存实际位置。C 已完成独立统计与图表，并以 PR #4 交付；两份100图标注均已接收并核验，类别判断一致率100%；非作者试用仍待接收。
 7. [C 的 PR #2](https://github.com/kanekikenny/sdsc6021-synthetic-data-toolkit/pull/2)（blacksheep429）中两个精确审计脚本已在 A 复跑通过。[B 的新 PR #3](https://github.com/kanekikenny/sdsc6021-synthetic-data-toolkit/pull/3)（careless-Snow）已对齐冻结 0.4，替代后来关闭未合并的旧 PR #1；报告了独立重算 15 头、3000 条训练参考预测一致及 CPU/GPU 特征超出原定严格阈值的发现。本轮检查范围、原阈值和限制见 [PR 记录](shared/synthetic_v2/audits/pr_review_20261115.json)；这些独立复核改动未用于原 G4 执行；用户随后要求合并，本轮已将 PR #2/#3 整合进主分支，正式代码、配置、模型和预测未变。
 8. A 仅用 seed0 原始第一完整批次（8 张训练图、32 视图）做独立诊断：默认 GPU 路径逐位复现封存缓存；CPU 最大差约 1.02e-4；仅在诊断进程关闭 cuDNN TF32 后，GPU 与 CPU 最大差约 7.45e-7。[数值证据与后端开关](shared/synthetic_v2/audits/b_pr3_precision_diagnostic.json)支持该样本上的后端精度解释，不把 B 全量严格匹配改判为通过，不外推测试集一致性。封存模型、特征和 G4 指针未变，未重跑正式测试。
 
@@ -41,13 +41,15 @@
 
 2026-11-16 验收 C 的 [PR #4](https://github.com/kanekikenny/sdsc6021-synthetic-data-toolkit/pull/4)（blacksheep429，提交 e29655f）：9 个脚本全部实际复跑退出0；4份CSV内容与提交一致，4张重生成PNG逐像素一致，英文报告与结果/范围核对通过。绘图依赖只放独立分析目录，正式环境、模型和G4预测未改动，未重跑推理。成果已合并，见 [分析入口](shared/synthetic_v2/c_evaluation/README.md)和[验收记录](shared/synthetic_v2/audits/c_pr4_acceptance.json)。C 的主实验统计交付完成，D 统稿/展示及真人验证继续。
 
-2026-11-16 接收用户填写的首份100图标注：100条均为correct，30条非空note；无漏填、无效值、编号/类别/路径改动。原Excel按SHA归档于本地运行审计目录；[逐行CSV](shared/synthetic_v2/audits/human_annotations/annotator_1.csv)保留原判断和备注，[接收记录](shared/synthetic_v2/audits/human_annotations/annotator_1_intake.json)记录来源及校验。类别可辨不等于结构正常，备注数也不等于全部缺陷数。用户随后补充：标注者代号A，标注日期2026-11-16，用时约30分钟；按用户报告保留近似用时，不解释为精确计时。第二份标注仍待接收，未计算双人一致率；非作者试用未收到。另已浏览全部100张候选图，按用户要求在其本地说明.md补充note填写示例与判断边界；[共享说明](shared/synthetic_v2/audits/human_annotations/说明.md)为同内容副本，不改原标注、图片、训练输入或正式预测。
+2026-11-16 接收用户填写的首份100图标注：100条均为correct，30条非空note；无漏填、无效值、编号/类别/路径改动。原Excel按SHA归档于本地运行审计目录；[逐行CSV](shared/synthetic_v2/audits/human_annotations/annotator_1.csv)保留原判断和备注，[接收记录](shared/synthetic_v2/audits/human_annotations/annotator_1_intake.json)记录来源及校验。类别可辨不等于结构正常，备注数也不等于全部缺陷数。用户随后补充：标注者代号A，标注日期2026-11-16，用时约30分钟；按用户报告保留近似用时，不解释为精确计时。首次接收时第二份标注未收到、未计算一致率；后续第二份接收及统计见下方最新记录，非作者试用仍未收到。另已浏览全部100张候选图，按用户要求在其本地说明.md补充note填写示例与判断边界；[共享说明](shared/synthetic_v2/audits/human_annotations/说明.md)为同内容副本，不改原标注、图片、训练输入或正式预测。
+
+2026-11-16 接收第二份100图标注，用户提供代号D、日期11/16、用时半小时（按2026-11-16及约30分钟的自报时长记录）。两份表均完整且全部为correct；A有30条备注，D有24条。编号/目标类别/路径与原包一致，100张图片字节未变，第一份工作副本的标注内容与已接收CSV一致。原Excel独立归档；[第二份CSV](shared/synthetic_v2/audits/human_annotations/annotator_2.csv)、[第二份接收记录](shared/synthetic_v2/audits/human_annotations/annotator_2_intake.json)、[一致率与配对表](shared/synthetic_v2/audits/human_annotations/README.md)供C/D复算和统稿。观察一致率100%，因两份均只用correct，kappa未定义；不能据此声称结构质量100%合格或验证了wrong/uncertain的区分能力。非作者试用尚未收到，正式模型和G4结果未改。
 
 2026-11-16 按用户要求删除教学性技术报告草稿，并清理交接说明对该文件的引用；具体路径已加入 Git 忽略规则，不再自动上传。B/C 已交付稿件、实验结果及人工标注记录保持不变，最终课程报告仍待 D 统稿。
 
 ## 队友现在需要做什么
 
-2026-11-16 B 完成对 C PR #4 的统计交叉复核（Codex 协助）：在 c707650 基线上独立下载并校验 G4 包，从160000条原始预测重算，四份CSV共64行、250个数值项均在原表舍入精度内一致；错配seed和总体SD两个负面对照均被检出。四图及报告结论已核对，未改原结果、正式配置或模型；B原全量特征严格复现失败继续保留。证据见 [复核快照](shared/b_c_g4_review/README.md)，统稿边界和英文段落见 [B交叉复核报告](report/B_C_G4_cross_review.md)。A已对PR #5原脚本实际复跑：16万行及250个数值项通过，三份全精度CSV和16份逐模型计数与提交一致；正式源码、配置、模型、预测及首位标注记录未改。本项已验收合并，见 [A验收记录](shared/synthetic_v2/audits/b_pr5_acceptance.json)；后续配合D统稿，第二份真人标注及非作者试用仍需真实人员完成。
+2026-11-16 B 完成对 C PR #4 的统计交叉复核（Codex 协助）：在 c707650 基线上独立下载并校验 G4 包，从160000条原始预测重算，四份CSV共64行、250个数值项均在原表舍入精度内一致；错配seed和总体SD两个负面对照均被检出。四图及报告结论已核对，未改原结果、正式配置或模型；B原全量特征严格复现失败继续保留。证据见 [复核快照](shared/b_c_g4_review/README.md)，统稿边界和英文段落见 [B交叉复核报告](report/B_C_G4_cross_review.md)。A已对PR #5原脚本实际复跑：16万行及250个数值项通过，三份全精度CSV和16份逐模型计数与提交一致；正式源码、配置、模型、预测及首位标注记录未改。本项已验收合并，见 [A验收记录](shared/synthetic_v2/audits/b_pr5_acceptance.json)；后续配合D统稿；两份标注现已接收，非作者试用仍待实际执行。
 
 以下是对已有工作包的接手说明；B/C 已有对应 GitHub 提交者，姓名/学号待填写，D 待认领。已有 Codex 产物不记作队友本人已完成，成员需保留自己的复核、分析、写作及工具辅助记录。
 
@@ -57,8 +59,8 @@
 |---|---|---|---|
 | A 工程与生成 | 已完成的本机环境、正式运行和公开 Release | G4 运行及正式预测交接已完成；继续维护交接与工程支持，核对本人报告章节和演示。当前没有待生成图片、待训练分类头或待执行正式评估 | 当前 GPU 电脑；文档协作通过本仓库 |
 | B 数据与分类 | 当前协议、训练包及G4正式预测；A的有限训练特征精度诊断 | PR #3及PR #5均已整合；C正式统计交叉复核经A原脚本复跑，250个数值项通过，三份全精度CSV和逐模型计数一致；原严格特征数值失败保留。B主要复核与方法交付完成，接续配合D统稿和展示 | 本机CPU统计复核；正式模型、缓存及G4预测未变 |
-| C 选择与评估 | [G4 正式预测包](shared/synthetic_v2/g4/README.md)（约 4 MB）及已有 G3 阶段成本；原选择和公式审计见 PR #2 | PR #4 已交付并验收：16万预测独立核验、三seed统计与直接对比、分类别及成本分析、9脚本、4图、4CSV和英文结果稿；接下来配合 D 统稿和展示，首位100图标注已收到，可读取原始CSV；第二份到齐后再计算一致率 | 正式预测已在 A GPU 产生；接下来的统计、画图和写作在自己的电脑即可完成，无需 CUDA |
-| D 产品与交付 | B 方法稿、C 结果稿、交接说明、label_audit_packet.zip 及非作者试用空白模板 | 核实用户需求和文献；配合用户收齐第二位标注者的结果及一位非作者试用记录；首位标注已接收，保留真实过程和结果；汇总各成员章节、完成最终报告、展示与实际贡献表，核实课程格式及全员到场 | 文献、标注、写作在各自电脑；完整 CLI 非作者试用按协议使用 A 已准备好的 GPU 环境并预约空闲队列 |
+| C 选择与评估 | [G4 正式预测包](shared/synthetic_v2/g4/README.md)（约 4 MB）及已有 G3 阶段成本；原选择和公式审计见 PR #2 | PR #4 已交付并验收：16万预测独立核验、三seed统计与直接对比、分类别及成本分析、9脚本、4图、4CSV和英文结果稿；接下来配合 D 统稿和展示，两份100图标注已收到，基础一致率及配对表已导出；可用原始CSV和独立脚本复算并整合真人评估结果 | 正式预测已在 A GPU 产生；接下来的统计、画图和写作在自己的电脑即可完成，无需 CUDA |
+| D 产品与交付 | B 方法稿、C 结果稿、交接说明、label_audit_packet.zip 及非作者试用空白模板 | 核实用户需求和文献；两份标注已接收，保留真实过程和结果；组织一位非作者试用并收齐实际操作记录；汇总各成员章节、完成最终报告、展示与实际贡献表，核实课程格式及全员到场 | 文献、标注、写作在各自电脑；完整 CLI 非作者试用按协议使用 A 已准备好的 GPU 环境并预约空闲队列 |
 
 - B/C 不需要各自安装 SD 或复制整套模型缓存。便携特征可用 NumPy 读取，分类头可用 CPU PyTorch 加载；具体下载、校验和示例见 [G3 交接说明](shared/synthetic_v2/README.md)。
 - 正式 CLI 绑定冻结源码与包版本，不能把换成 CPU 依赖后的完整环境当作同一个正式运行。CPU 独立复核注明环境差异；原封存运行不覆盖、不改参数，也不根据测试结果重新选图或重训。

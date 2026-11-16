@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "status": "computed_from_two_completed_forms",
+  "images": 100,
+  "judgments_total": 200,
+  "agreement_count": 100,
+  "disagreement_count": 0,
+  "agreement_rate": 1.0,
+  "agreement_percent": 100.0,
+  "judgment_counts": {
+    "annotator_1": {
+      "correct": 100,
+      "wrong": 0,
+      "uncertain": 0
+    },
+    "annotator_2": {
+      "correct": 100,
+      "wrong": 0,
+      "uncertain": 0
+    }
+  },
+  "notes_nonempty": {
+    "annotator_1": 30,
+    "annotator_2": 24
+  },
+  "confusion_matrix": {
+    "correct": {
+      "correct": 100,
+      "wrong": 0,
+      "uncertain": 0
+    },
+    "wrong": {
+      "correct": 0,
+      "wrong": 0,
+      "uncertain": 0
+    },
+    "uncertain": {
+      "correct": 0,
+      "wrong": 0,
+      "uncertain": 0
+    }
+  },
+  "per_class": {
+    "frog": {
+      "images": 10,
+      "agreements": 10,
+      "agreement_rate": 1.0
+    },
+    "ship": {
+      "images": 10,
+      "agreements": 10,
+      "agreement_rate": 1.0
+    },
+    "airplane": {
+      "images": 10,
+      "agreements": 10,
+      "agreement_rate": 1.0
+    },
+    "bird": {
+      "images": 10,
+      "agreements": 10,
+      "agreement_rate": 1.0
+    },
+    "deer": {
+      "images": 10,
+      "agreements": 10,
+      "agreement_rate": 1.0
+    },
+    "cat": {
+      "images": 10,
+      "agreements": 10,
+      "agreement_rate": 1.0
+    },
+    "automobile": {
+      "images": 10,
+      "agreements": 10,
+      "agreement_rate": 1.0
+    },
+    "truck": {
+      "images": 10,
+      "agreements": 10,
+      "agreement_rate": 1.0
+    },
+    "horse": {
+      "images": 10,
+      "agreements": 10,
+      "agreement_rate": 1.0
+    },
+    "dog": {
+      "images": 10,
+      "agreements": 10,
+      "agreement_rate": 1.0
+    }
+  },
+  "disagreement_ids": [],
+  "chance_agreement": 1.0,
+  "cohen_kappa": null,
+  "cohen_kappa_status": "undefined_expected_agreement_is_one",
+  "input_sha256": {
+    "annotator_1": "067f1d2d63103d6500d48f8fb7fafde8255c6725a3ecaa9db4356aa930c08710",
+    "annotator_2": "589eace65a6a32e36504ac3ac607fdc190e84f024715cff3d4cb1217d95b1b49"
+  },
+  "scope": "Agreement of target-class recognizability judgments on the same 100 sampled candidates.",
+  "limits": [
+    "Correct means recognizable target class, including images with structural defects.",
+    "Optional free-text notes are retained; their counts are not exhaustive defect rates.",
+    "When both forms use only correct, perfect observed agreement does not show ability to distinguish wrong/uncertain cases; kappa is undefined.",
+    "This computation does not verify how independently the forms were completed.",
+    "No training-data curation, model change, final evaluation or non-author usability trial is performed."
+  ]
+}

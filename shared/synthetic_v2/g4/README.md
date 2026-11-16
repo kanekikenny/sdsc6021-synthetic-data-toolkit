@@ -2,7 +2,7 @@
 
 正式评估已在 A 的 RTX 5070 Ti Laptop GPU 上完成。评估运行 `20261115T133443_199162Z`，执行代码 `26e107feba6c4c4c5f447f84cada707e140d738c`；实验源码和配置与原冻结版本一致，15 个训练模型及其封存清单均未改动。
 
-这次交接包含正式预测和工程校验。C 的独立统计、四图四表及英文解释现已验收，见 [C 结果入口](../c_evaluation/README.md)和[验收记录](../audits/c_pr4_acceptance.json)；首位100图标注已接收，见[接收记录](../audits/human_annotations/annotator_1_intake.json)；第二位标注及非作者试用待接收。唯一实验规则仍见根目录 agent.md，实际分工与进度见 progress.md。ZIP 内的状态描述保留其原始交接时刻，不改写原文件。
+这次交接包含正式预测和工程校验。C 的独立统计、四图四表及英文解释现已验收，见 [C 结果入口](../c_evaluation/README.md)和[验收记录](../audits/c_pr4_acceptance.json)；两份100图标注已接收并核验，见[标注结果入口](../audits/human_annotations/README.md)，类别判断一致率100%；非作者试用待接收。唯一实验规则仍见根目录 agent.md，实际分工与进度见 progress.md。ZIP 内的状态描述保留其原始交接时刻，不改写原文件。
 
 `models/frozen.json` 的未评估标记描述 G3 封存时刻；保持该文件原字节以验证封存哈希。当前正式测试状态以本次 report.json、evaluation/latest.json 和验证记录为准。现有 summarize 的终端返回字段 test_evaluated 仍显示旧值 false，共享摘要已按实际报告更新；这项导出显示问题不改变正式预测或模型，也不作为重新评估的理由。
 

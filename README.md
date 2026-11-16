@@ -2,7 +2,7 @@
 
 面向 20-shot 图像分类的合成数据增强工具：生成补充图片、选择样本、训练分类器，并评估真实测试效果。
 
-> 当前：G4 正式评估与预测交接已完成。15 个封存分类器和一次 CLIP 参考共 160,000 条正式测试预测，连同运行记录已公开并验证下载。[C 的 G4 数据入口](shared/synthetic_v2/g4/README.md)说明约 4 MB 预测包的下载、字段和后续统计任务；[G3 入口](shared/synthetic_v2/README.md)保留图片、特征与模型。C 的独立分析、4图、4表及英文结果稿已验收合并，见 [结果入口](shared/synthetic_v2/c_evaluation/README.md)。首位标注者的 100 图判断已接收，见[标注记录](shared/synthetic_v2/audits/human_annotations/annotator_1_intake.json)和[备注说明](shared/synthetic_v2/audits/human_annotations/说明.md)；第二位标注、非作者试用及最终报告/展示统稿待完成，实际进度见 progress.md。
+> 当前：G4 正式评估与预测交接已完成。15 个封存分类器和一次 CLIP 参考共 160,000 条正式测试预测，连同运行记录已公开并验证下载。[C 的 G4 数据入口](shared/synthetic_v2/g4/README.md)说明约 4 MB 预测包的下载、字段和后续统计任务；[G3 入口](shared/synthetic_v2/README.md)保留图片、特征与模型。C 的独立分析、4图、4表及英文结果稿已验收合并，见 [结果入口](shared/synthetic_v2/c_evaluation/README.md)。A、D 两份100图标注已接收并核验，类别判断一致率100%，见[标注结果入口](shared/synthetic_v2/audits/human_annotations/README.md)；非作者试用及最终报告/展示统稿待完成，实际进度见 progress.md。
 
 ## 阅读入口
 

@@ -1,7 +1,7 @@
 {
-  "status": "one_annotator_received_second_pending",
+  "status": "two_annotation_forms_received",
   "images": 100,
-  "annotators_confirmed": 1,
+  "annotators_confirmed": 2,
   "relative_path": "deliverables/audit_packet_04/label_audit_packet.zip",
   "sha256": "1c12360f61baf1beaf8af2f878900db751a8e5f79b7d09c8d3c49b5d39c0f85b",
   "bytes": 44594834,
@@ -11,7 +11,8 @@
   "arrangement": "user_will_arrange_later",
   "download_url": "https://github.com/kanekikenny/sdsc6021-synthetic-data-toolkit/releases/download/g3-synthetic-v2-v0.4/label_audit_packet.zip",
   "release_url": "https://github.com/kanekikenny/sdsc6021-synthetic-data-toolkit/releases/tag/g3-synthetic-v2-v0.4",
-  "completed_annotation_forms_received": 1,
-  "latest_annotation_intake": "human_annotations/annotator_1_intake.json",
-  "second_annotator_status": "not_received"
+  "completed_annotation_forms_received": 2,
+  "latest_annotation_intake": "human_annotations/annotator_2_intake.json",
+  "second_annotator_status": "received",
+  "agreement_report": "human_annotations/agreement.json"
 }

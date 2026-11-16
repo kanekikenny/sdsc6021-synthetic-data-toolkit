@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "run_id": "synthetic_v2",
+  "status": "received_and_format_validated",
+  "received_utc": "2026-11-16T09:55:26.797571+00:00",
+  "config_hash": "5380e7f962bb3646c6ff81148dd3d3ff2f96d1af97f008a774454af03eacd5ad",
+  "packet_sha256": "1c12360f61baf1beaf8af2f878900db751a8e5f79b7d09c8d3c49b5d39c0f85b",
+  "annotator_id": "annotator_2",
+  "annotator_alias": "D",
+  "annotation_date": "2026-11-16",
+  "annotation_date_reported": "11/16",
+  "elapsed_minutes": 30,
+  "elapsed_minutes_approximate": true,
+  "elapsed_time_reported": "半小时",
+  "annotation_metadata_source": "user_report",
+  "original_workbook_name": "annotator_2.xlsx",
+  "original_workbook_sha256": "08f9ee9ae4407baa476e6f3b8fcc5c119a458ba37a82bb5088d0bcd349b32f8d",
+  "local_original_archive": "runs/synthetic_v2/audits/human_annotation_intake/20261116T095526_797571Z/annotator_2.xlsx",
+  "csv_relative_path": "shared/synthetic_v2/audits/human_annotations/annotator_2.csv",
+  "csv_sha256": "589eace65a6a32e36504ac3ac607fdc190e84f024715cff3d4cb1217d95b1b49",
+  "rows": 100,
+  "judgment_counts": {
+    "correct": 100,
+    "wrong": 0,
+    "uncertain": 0
+  },
+  "notes_nonempty": 24,
+  "per_class": {
+    "frog": {
+      "correct": 10
+    },
+    "ship": {
+      "correct": 10
+    },
+    "airplane": {
+      "correct": 10
+    },
+    "bird": {
+      "correct": 10
+    },
+    "deer": {
+      "correct": 10
+    },
+    "cat": {
+      "correct": 10
+    },
+    "automobile": {
+      "correct": 10
+    },
+    "truck": {
+      "correct": 10
+    },
+    "horse": {
+      "correct": 10
+    },
+    "dog": {
+      "correct": 10
+    }
+  },
+  "validation": {
+    "all_original_505_cells_read": true,
+    "all_judgments_valid_and_complete": true,
+    "ids_classes_and_paths_match_original_packet": true,
+    "all_100_packet_images_match_original_bytes": true,
+    "original_judgments_and_notes_preserved": true,
+    "first_working_copy_content_matches_received_first": true,
+    "source_workbook_unchanged": true
+  },
+  "agreement_report": "agreement.json",
+  "scope": "File contents, sample mapping and raw answer preservation; this check does not establish independence of completion."
+}
