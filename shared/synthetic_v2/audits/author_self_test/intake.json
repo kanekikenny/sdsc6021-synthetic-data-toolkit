@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "record_type": "author_self_test",
+  "status": "recorded_with_limitations",
+  "author_alias": "A",
+  "date": "2026-11-16",
+  "timezone": "Asia/Singapore",
+  "received_at": "2026-11-16T20:04:29.4655380+08:00",
+  "classification_basis": "User explicitly described the activity as author self-test and requested updating that record.",
+  "original_console_alias": "test",
+  "original_non_author_self_report_superseded": true,
+  "external_user_trial_demonstrated": false,
+  "run_dir": "runs/g2_smoke/20261116T110418_330028Z",
+  "original_evidence_directory": "runs/synthetic_v2/audits/non_author_trial/20261116T103650_660644Z",
+  "original_evidence_directory_name_is_historical": true,
+  "start_time": "2026-11-16T18:40:52+08:00",
+  "end_time": null,
+  "elapsed_minutes": null,
+  "timing_limitation": "Original transcripts have not been confirmed closed. No end time or full duration is fabricated.",
+  "computation_status": "success",
+  "cli_exit_code": null,
+  "cli_exit_method": "not_observed",
+  "completed_without_help": false,
+  "help_received": [
+    "Step-by-step setup and command guidance provided by the organizer.",
+    "After a terminal-window change, continuation logging and the plan command were provided step by step.",
+    "Organizer inspected the completed report and used an isolated read-only py-spy diagnostic to identify a hanging automatic conversion/download thread."
+  ],
+  "feedback_quote": "数字我能逐条复述，但结论读不出来",
+  "feedback_details": [
+    "Five condition definitions and the decisions supported by their numbers were hard to find.",
+    "Forty development images give a 2.5 percentage-point resolution per image.",
+    "Mixed-source loss and real-only loss have different definitions.",
+    "Mixed training keeps 160 real images but changes the real loss coefficient from 1.0 to 0.5.",
+    "Smoke trains on 16 images per class and holds out four within the 20-shot budget.",
+    "Per-class errors, reference context and the meaning of internal field names need explanation.",
+    "Fixed-seed output matching a historical smoke is reproduction, not another independent repetition."
+  ],
+  "verification_reference": "verification.json",
+  "readable_record": "README.md",
+  "feedback_corrections": [
+    "Nine sample IDs are wrong under all five heads. Bird and cat account for seven of them.",
+    "Logged loss is pre-update minibatch loss. The new source-specific losses are post-hoc full-training diagnostics.",
+    "Low synthetic training CE alone does not prove memorisation or a causal mechanism.",
+    "The original JSON scope field already labels the run as engineering verification, but its presentation lacks an accessible explanation."
+  ],
+  "formal_experiment_changed": false,
+  "automatic_readable_report_export_implemented": false,
+  "outstanding_metadata": [
+    "Closed transcript and actual end time/full duration"
+  ],
+  "presentation_improvement_verified_by_new_external_trial": false
+}

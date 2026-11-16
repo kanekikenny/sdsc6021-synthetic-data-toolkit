@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-16T19:53:14.749958+08:00",
+  "record_type": "author_self_test_posthoc_audit",
+  "run_dir": "runs/g2_smoke/20261116T110418_330028Z",
+  "config_hash": "5380e7f962bb3646c6ff81148dd3d3ff2f96d1af97f008a774454af03eacd5ad",
+  "scope": "Existing smoke checkpoints, cached features and saved internal-dev predictions only; CPU post-processing; no training, image generation or official test access.",
+  "input_sha256": {
+    "report.json": "74d74e645f58e4834d2131521ce376b5ee50f7b92f6badc62438ef3a6d344fe9",
+    "metrics/dev_predictions.json": "2c12740e794828451af542a9d08698a4bdb5c283b31b98d216a13e7e3420b1f0",
+    "manifests/real.json": "91ee960b51f3c00833a9f86cd581a8f1740a151518cdc152b1098349ef5d4d6e",
+    "manifests/candidates.json": "4da6c1c6e7ab57906ddd6eaf133b26d4e4e890dce08b8082190dee66b8440d15",
+    "manifests/selections.json": "2010fcbf0f76f648566a86a161a723f6a49cf26fea3b8899977dbc30a09d1e49",
+    "features/index.json": "17e137e64caaccdeab2352dfd5db88f30d11c45828d8bf1b47797db5761b8421"
+  },
+  "audit_script_sha256": "f793c82d56e37bea55c7df6c5d9ae6025a981176347900f72c9fd94712b88a40",
+  "training_images": 160,
+  "dev_images": 40,
+  "train_per_class": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "dev_per_class": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "single_dev_image_resolution_pp": 2.5,
+  "source_weights": {
+    "real_only": {
+      "real": 1.0,
+      "synthetic": 0.0
+    },
+    "mixed": {
+      "real": 0.5,
+      "synthetic": 0.5
+    }
+  },
+  "nested_random": true,
+  "nested_clip": true,
+  "mechanical_checks": {
+    "balanced_generation": true,
+    "generation_resume_integrity": true,
+    "no_train_dev_overlap": true,
+    "dev_within_20_shot_budget": true,
+    "equal_selection_counts": true,
+    "nested_selections": true,
+    "deterministic_rankings": true,
+    "frozen_backbone_and_bn": true,
+    "feature_cache_resume_integrity": true,
+    "paired_initialization_and_real_batches": true,
+    "equal_updates": true,
+    "classifier_reload_identical": true,
+    "saved_predictions_recompute_accuracy": true,
+    "official_test_untouched": true
+  },
+  "compute_seconds": 83.8248824000002,
+  "feature_cache_hits": 230,
+  "results": [
+    {
+      "condition_id": "real_only",
+      "synthetic_per_class": 0,
+      "synthetic_total": 0,
+      "correct": 28,
+      "dev_count": 40,
+      "accuracy": 0.7,
+      "delta_pp_vs_real_only": 0.0,
+      "fixed_baseline_errors": 0,
+      "broke_baseline_correct": 0,
+      "exact_mcnemar_two_sided_p": 1.0,
+      "wilson_95_interval_descriptive": [
+        0.5456998118185507,
+        0.8192515477025347
+      ],
+      "per_class_correct": [
+        4,
+        4,
+        0,
+        1,
+        3,
+        4,
+        4,
+        2,
+        3,
+        3
+      ],
+      "real_train_ce_all_four_views_posthoc": 0.9084149599075317,
+      "selected_synthetic_ce_all_four_views_posthoc": null,
+      "full_training_objective_posthoc": 0.9084149599075317,
+      "logged_final_minibatch_loss": 0.9322945475578308,
+      "model_sha256": "51b193b9e5b8df11bc6eb95bc5d41889e346054a67ad24380954a95b65313e31"
+    },
+    {
+      "condition_id": "random_1",
+      "synthetic_per_class": 1,
+      "synthetic_total": 10,
+      "correct": 28,
+      "dev_count": 40,
+      "accuracy": 0.7,
+      "delta_pp_vs_real_only": 0.0,
+      "fixed_baseline_errors": 3,
+      "broke_baseline_correct": 3,
+      "exact_mcnemar_two_sided_p": 1.0,
+      "wilson_95_interval_descriptive": [
+        0.5456998118185507,
+        0.8192515477025347
+      ],
+      "per_class_correct": [
+        4,
+        4,
+        0,
+        1,
+        4,
+        4,
+        3,
+        2,
+        2,
+        4
+      ],
+      "real_train_ce_all_four_views_posthoc": 1.1433699131011963,
+      "selected_synthetic_ce_all_four_views_posthoc": 0.10969726741313934,
+      "full_training_objective_posthoc": 0.6265335902571678,
+      "logged_final_minibatch_loss": 0.657514214515686,
+      "model_sha256": "65d43659150cee3baf823d4d3808c268ec8e74d1c20227712d2a008d1c979f4c"
+    },
+    {
+      "condition_id": "random_2",
+      "synthetic_per_class": 2,
+      "synthetic_total": 20,
+      "correct": 27,
+      "dev_count": 40,
+      "accuracy": 0.675,
+      "delta_pp_vs_real_only": -2.5,
+      "fixed_baseline_errors": 2,
+      "broke_baseline_correct": 3,
+      "exact_mcnemar_two_sided_p": 1.0,
+      "wilson_95_interval_descriptive": [
+        0.5201774618987768,
+        0.799154977682173
+      ],
+      "per_class_correct": [
+        4,
+        4,
+        0,
+        1,
+        3,
+        4,
+        3,
+        2,
+        2,
+        4
+      ],
+      "real_train_ce_all_four_views_posthoc": 1.1104881763458252,
+      "selected_synthetic_ce_all_four_views_posthoc": 0.1561833620071411,
+      "full_training_objective_posthoc": 0.6333357691764832,
+      "logged_final_minibatch_loss": 0.6758131980895996,
+      "model_sha256": "51dbefa6589bfeb2a096ea3d00a52aef4536c0312f6818b71171282766f3579c"
+    },
+    {
+      "condition_id": "clip_1",
+      "synthetic_per_class": 1,
+      "synthetic_total": 10,
+      "correct": 27,
+      "dev_count": 40,
+      "accuracy": 0.675,
+      "delta_pp_vs_real_only": -2.5,
+      "fixed_baseline_errors": 2,
+      "broke_baseline_correct": 3,
+      "exact_mcnemar_two_sided_p": 1.0,
+      "wilson_95_interval_descriptive": [
+        0.5201774618987768,
+        0.799154977682173
+      ],
+      "per_class_correct": [
+        3,
+        4,
+        0,
+        1,
+        3,
+        4,
+        3,
+        3,
+        2,
+        4
+      ],
+      "real_train_ce_all_four_views_posthoc": 1.1293158531188965,
+      "selected_synthetic_ce_all_four_views_posthoc": 0.09544920921325684,
+      "full_training_objective_posthoc": 0.6123825311660767,
+      "logged_final_minibatch_loss": 0.6528875231742859,
+      "model_sha256": "5ab4caa10ae80730ccd4a7958866aca49fe9427bda8cef001ba107f8f62dee06"
+    },
+    {
+      "condition_id": "clip_2",
+      "synthetic_per_class": 2,
+      "synthetic_total": 20,
+      "correct": 28,
+      "dev_count": 40,
+      "accuracy": 0.7,
+      "delta_pp_vs_real_only": 0.0,
+      "fixed_baseline_errors": 2,
+      "broke_baseline_correct": 2,
+      "exact_mcnemar_two_sided_p": 1.0,
+      "wilson_95_interval_descriptive": [
+        0.5456998118185507,
+        0.8192515477025347
+      ],
+      "per_class_correct": [
+        4,
+        4,
+        0,
+        1,
+        3,
+        4,
+        3,
+        3,
+        2,
+        4
+      ],
+      "real_train_ce_all_four_views_posthoc": 1.10761559009552,
+      "selected_synthetic_ce_all_four_views_posthoc": 0.14647214114665985,
+      "full_training_objective_posthoc": 0.6270438656210899,
+      "logged_final_minibatch_loss": 0.6679255962371826,
+      "model_sha256": "dd08e23ebfe87b5f15035a20b28313772d7692cbd2d00a3d1a95e8a2e9aca131"
+    }
+  ],
+  "common_error_count": 9,
+  "common_error_ids": [
+    "real_train_17826",
+    "real_train_18210",
+    "real_train_26883",
+    "real_train_27201",
+    "real_train_27702",
+    "real_train_35408",
+    "real_train_38605",
+    "real_train_45758",
+    "real_train_46424"
+  ],
+  "previous_run": "runs/g2_smoke/20261115T100414_504102Z",
+  "previous_run_comparison": {
+    "accuracy_float64_bitwise_equal": true,
+    "logged_loss_records_equal": true,
+    "dev_predictions_equal_ignoring_config_hash": true
+  },
+  "independent_repetition_added": false,
+  "external_user_trial_demonstrated": false,
+  "limitations": [
+    "Wilson intervals and paired tests are descriptive diagnostics on 40 internal-dev images, not formal augmentation-effect evidence or training-seed uncertainty.",
+    "CE values were recomputed post hoc over full training sources and four views; logged loss is a different, pre-update final-minibatch value.",
+    "Real source coefficient is 0.5 in mixed training; no equal-real-weight control isolates a synthetic-data-only causal effect.",
+    "Common errors describe these five fitted heads; they are not an irreducible error floor.",
+    "No end-to-end CLI exit code, clean shutdown, closed transcript or complete user duration is inferred from report status."
+  ]
+}
