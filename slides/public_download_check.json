@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-16T20:29:22.733466+08:00",
+  "status": "verified",
+  "published_commit": "3c974084fa79c9ce4ae40f5f20cc8729a95c948f",
+  "checks": [
+    {
+      "file": "final/SDSC6021_Final_Presentation.pdf",
+      "url": "https://raw.githubusercontent.com/kanekikenny/sdsc6021-synthetic-data-toolkit/3c974084fa79c9ce4ae40f5f20cc8729a95c948f/slides/final/SDSC6021_Final_Presentation.pdf",
+      "http_status": 200,
+      "authenticated": false,
+      "bytes": 484360,
+      "sha256": "1f363d69cfd56a5e0cb72208bdf55e4b5cef2a16da67d8fd0c2661332f7e75b7",
+      "local_final_matches_download": true
+    },
+    {
+      "file": "final/SDSC6021_Final_Presentation.pptx",
+      "url": "https://raw.githubusercontent.com/kanekikenny/sdsc6021-synthetic-data-toolkit/3c974084fa79c9ce4ae40f5f20cc8729a95c948f/slides/final/SDSC6021_Final_Presentation.pptx",
+      "http_status": 200,
+      "authenticated": false,
+      "bytes": 1416532,
+      "sha256": "5260059c055320c295b1e8956c4cc131914df4a51ee15e395a71962ef81f4e24",
+      "local_final_matches_download": true
+    }
+  ]
+}

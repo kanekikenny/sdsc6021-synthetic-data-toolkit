@@ -38,6 +38,8 @@
 
 2026-11-16 G5演示交付：用户确认五分钟上限、按A–D分工表列职责，并要求离开后持续完成。已制作[最终演示PDF](slides/final/SDSC6021_Final_Presentation.pdf)、[可编辑PPTX](slides/final/SDSC6021_Final_Presentation.pptx)及[英文讲稿/计时安排](slides/speaker_notes.md)。正文8页、437词、目标270秒，备份4页仅供问答；保留收益范围、CLIP88.21%参考、共享生成成本、混合损失权重、作者自测和原严格数值失败等解释边界。原生2图/6表校验、PowerPoint打开和PDF导出成功，最终12页均已渲染逐页查看，数值和来源核对通过；这些不等于真人排练或外部用户验证。成员姓名/学号及课程封面要求、实际计时排练、原日志结束时间暂列[待确认项](slides/README.md#待回后确认)，不阻塞本轮交付。模型、冻结配置及正式预测保持不变，团队技术报告仍待D统稿；交付哈希见[记录](slides/delivery.json)。
 
+2026-11-16 演示材料已同步至公开main（交付提交`3c974084fa79c9ce4ae40f5f20cc8729a95c948f`）。PDF为484,360字节，PPTX为1,416,532字节；两文件均通过无登录完整下载、HTTP200及SHA-256核对，[下载证明](slides/public_download_check.json)已记录。构建器产生的两个`.chart-data-*`暂存目录已在核验绝对路径位于本项目后移入`runs/_cache/presentation_build/chart_data_snapshots/`，原文件保留；构建脚本补充相同归档行为，演示源码统一LF。未归档用户原有分工表格式改动和标注包，未更改原正式结果。
+
 ## 本轮范围与后续关卡
 
 1. G1 已完成：固定权重完整性、实际 CUDA 运算、512×512 单图生成、十类 CLIP 打分和 ResNet 特征均有证据。

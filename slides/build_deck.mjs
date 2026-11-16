@@ -26,6 +26,7 @@ const presentation=Presentation.create({slideSize:{width:1280,height:720}});
 buildDeck(presentation,data);
 const candidatePath=path.join(buildDir,'candidate.pptx');
 await (await PresentationFile.exportPptx(presentation)).save(candidatePath);
+const snapshotsBefore=new Set((await fs.readdir(root)).filter(n=>n.startsWith('.chart-data-')));
 const result=await finalizePresentation({
   workspaceDir:root,candidatePath,finalPath:outputPptx,pythonExecutable:runtimePython,
   integrityValidatorPath:path.join(skillDir,'container_tools/inspect_presentation_package_integrity.py'),
@@ -37,6 +38,16 @@ const result=await finalizePresentation({
   fontPolicy:{basis:'design',families:['Arial']},verifyArtifactToolImport:true,
   receiptPath:path.join(buildDir,'validation.json'),
 });
+// The immutable finalizer stages chart workbooks in the workspace root.
+// Preserve only the directories created by this invocation under the task cache.
+for(const name of (await fs.readdir(root)).filter(n=>n.startsWith('.chart-data-')&&!snapshotsBefore.has(n))){
+  const from=path.resolve(root,name), to=path.resolve(buildDir,'chart_data_snapshots',name);
+  if(!from.startsWith(root+path.sep)||!to.startsWith(buildDir+path.sep))throw new Error('Chart snapshot outside task paths');
+  const stat=await fs.lstat(from);
+  if(!stat.isDirectory()||stat.isSymbolicLink())throw new Error('Unexpected chart snapshot type');
+  await fs.mkdir(path.dirname(to),{recursive:true});
+  await fs.rename(from,to);
+}
 await fs.writeFile(path.join(buildDir,'export_result.json'),JSON.stringify(result,null,2));
 for(let i=0;i<presentation.slides.items.length;i++){
   const png=await presentation.export({slide:presentation.slides.items[i],format:'png',scale:1});

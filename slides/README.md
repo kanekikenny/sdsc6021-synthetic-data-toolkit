@@ -4,6 +4,7 @@
 - [可编辑PPTX](final/SDSC6021_Final_Presentation.pptx)
 - [英文讲稿、负责人和计时安排](speaker_notes.md)
 - [交付校验值与范围](delivery.json)
+- [GitHub未登录完整下载核验](public_download_check.json)：PDF/PPTX均返回200，下载字节与本地最终文件SHA-256一致。
 
 **正常演讲只讲第1–8页，计划4分30秒，上限5分钟。第9–12页为问答备份，不计入正文。** 正文437个英文词；时间为内容预算，尚未真人排练计时。演讲到第8页结束，提问时再打开备份页。
 

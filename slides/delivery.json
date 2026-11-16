@@ -19,7 +19,7 @@
     }
   },
   "schema_version": 1,
-  "status": "local_verified_ready_for_github_sync",
+  "status": "published_and_public_download_verified",
   "language": "English",
   "team_roles_basis": "User confirmed the A-D allocation table. Full names/student IDs were not supplied.",
   "author_self_test": "../shared/synthetic_v2/audits/author_self_test/README.md",
@@ -38,5 +38,7 @@
     "Present slides 1-8 only. Slides 9-12 are backup for questions.",
     "Final team technical report and personal metadata remain separate tasks.",
     "Author self-test shutdown/total-duration metadata remain incomplete."
-  ]
+  ],
+  "published_commit": "3c974084fa79c9ce4ae40f5f20cc8729a95c948f",
+  "public_download_check": "public_download_check.json"
 }
