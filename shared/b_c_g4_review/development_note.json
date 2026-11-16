@@ -1,0 +1,10 @@
+{
+  "first_attempt": {
+    "exit_code": 1,
+    "error": "KeyError: condition_id",
+    "cause": "New B reviewer initially assumed the classifier row schema for the original three-column CLIP zero-shot reference.",
+    "classification": "B review tool development error; not a C result defect"
+  },
+  "correction": "Validate the exact three-column zero-shot schema separately; bind reference identity/config through the hashed prediction index and report. No input files or thresholds changed.",
+  "rerun": "Full 160000-row review passed; see review.json."
+}

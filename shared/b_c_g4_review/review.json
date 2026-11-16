@@ -1,0 +1,215 @@
+{
+  "status": "pass",
+  "scope": "B independent recount of released predictions; not independent GPU inference",
+  "created_utc": "2026-11-16T02:11:32.660497+00:00",
+  "source_commit": "c70765015273bfbe4bf5bac859793c77bd497a65",
+  "environment": {
+    "python": "3.13.9 (tags/v3.13.9:8183fa5, Oct 14 2025, 14:09:13) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": "stdlib only"
+  },
+  "command": "python code/reviews/review_c_g4.py --bundle runs/b_c_cross_review/input/g4_predictions_and_run_records.zip --out runs/b_c_cross_review/results",
+  "zip_sha256": "91045de3b946dccd21d9b6810f06309b1f86dc09ba4d814a158a4f9c078f6807",
+  "zip_bytes": 3980356,
+  "rows_verified": 160000,
+  "files": [
+    {
+      "condition": "real_only",
+      "seed": 0,
+      "rows": 10000,
+      "sha256": "89a15b725a5719a50c20282abc444978efb23e158f7e131337bf446154c944d9"
+    },
+    {
+      "condition": "random_50",
+      "seed": 0,
+      "rows": 10000,
+      "sha256": "6e11a2d327a95dcf54e0e050a44e19fa3d7615576d54303e11fbe1e1efe6d0fd"
+    },
+    {
+      "condition": "clip_50",
+      "seed": 0,
+      "rows": 10000,
+      "sha256": "ffee61910f83773e5f2ea86af2ba7910792ea6d4509a2b8cb93f1554426e1eb1"
+    },
+    {
+      "condition": "random_150",
+      "seed": 0,
+      "rows": 10000,
+      "sha256": "dd99d6b571f2b86a64c9abb4753c81ad203408a67914e192ef1c889aad129d0e"
+    },
+    {
+      "condition": "clip_150",
+      "seed": 0,
+      "rows": 10000,
+      "sha256": "8a0f8735cb28bed62f5a58dce14a86396ca491ef165d50f872704d86957d6a2c"
+    },
+    {
+      "condition": "real_only",
+      "seed": 1,
+      "rows": 10000,
+      "sha256": "dbee724cc8f83afc67f23ebf959117f264563602d8baa1872e7839f4bc6c4660"
+    },
+    {
+      "condition": "random_50",
+      "seed": 1,
+      "rows": 10000,
+      "sha256": "f5b7f0e616604fbddf91ee889493113a7ca5e49d0a3da36db667547925805b86"
+    },
+    {
+      "condition": "clip_50",
+      "seed": 1,
+      "rows": 10000,
+      "sha256": "4a5b16de9c93d3c83853880848a275e2ef657ffcc5b965c361840110fe272eb1"
+    },
+    {
+      "condition": "random_150",
+      "seed": 1,
+      "rows": 10000,
+      "sha256": "b2f84825233108f4352d293a22d758162178202310bccea767e5d0364cef1155"
+    },
+    {
+      "condition": "clip_150",
+      "seed": 1,
+      "rows": 10000,
+      "sha256": "b2df87f277c4d4781a5952fa8b8b4420ff8596ca99eac8285ffe215c45f86c63"
+    },
+    {
+      "condition": "real_only",
+      "seed": 2,
+      "rows": 10000,
+      "sha256": "2652983cbaae8697b32e6fa76e4cc6492c7081504b10303145db2c01011cfad8"
+    },
+    {
+      "condition": "random_50",
+      "seed": 2,
+      "rows": 10000,
+      "sha256": "3cc5ae60decea9d4b3c05492c19a6befda2bc3be3781eb91af1ce02d703de7df"
+    },
+    {
+      "condition": "clip_50",
+      "seed": 2,
+      "rows": 10000,
+      "sha256": "25593041b7b91cd93857cf68c3faf385705d724e3335080f469b521d04245459"
+    },
+    {
+      "condition": "random_150",
+      "seed": 2,
+      "rows": 10000,
+      "sha256": "03636e02cf704a9358c86d5768cda8a9d0ad4a111707ac6d45d07551bc35bef2"
+    },
+    {
+      "condition": "clip_150",
+      "seed": 2,
+      "rows": 10000,
+      "sha256": "139a3ac52759be0f057976c800cf4ee96b185f6910b5fee2018c0d0b8f6628a6"
+    },
+    {
+      "condition": "clip_zero_shot",
+      "seed": null,
+      "rows": 10000,
+      "sha256": "bc685340d5965ea7782d97100c92e7883fbac74475227d58bb2562c9ee2de364"
+    }
+  ],
+  "table_checks": {
+    "07_g4_summary.csv": {
+      "rows": 5,
+      "numeric_cells": 20,
+      "decimal_places": 4,
+      "max_absolute_rounding_error": 4.681288428864949e-05,
+      "status": "pass"
+    },
+    "08_g4_per_class.csv": {
+      "rows": 50,
+      "numeric_cells": 200,
+      "decimal_places": 3,
+      "max_absolute_rounding_error": 0.0004791385931959269,
+      "status": "pass"
+    },
+    "13_g4_direct_comparisons.csv": {
+      "rows": 4,
+      "numeric_cells": 20,
+      "decimal_places": 4,
+      "max_absolute_rounding_error": 3.3333333331057174e-05,
+      "status": "pass"
+    },
+    "12_g4_cost_summary.csv": {
+      "rows": 5,
+      "numeric_cells": 10,
+      "decimal_places": 4,
+      "max_absolute_rounding_error": 4.497833337513413e-05,
+      "status": "pass"
+    }
+  },
+  "negative_controls": {
+    "wrong_seed_pairing": "rejected_as_expected",
+    "population_sd": "rejected_as_expected"
+  },
+  "paired_seed_gains_pp": {
+    "real_only": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "random_50": [
+      3.460000000000008,
+      4.550000000000011,
+      2.9099999999999966
+    ],
+    "clip_50": [
+      3.450000000000003,
+      4.730000000000004,
+      3.3400000000000034
+    ],
+    "random_150": [
+      3.5200000000000102,
+      4.3500000000000085,
+      2.980000000000004
+    ],
+    "clip_150": [
+      3.6200000000000045,
+      4.52000000000001,
+      3.319999999999993
+    ]
+  },
+  "clip_zero_shot_accuracy_pct": 88.21,
+  "recorded_stage_seconds": 2888.5901943999925,
+  "generation_share_pct": 88.32376653310436,
+  "input_sha256": {
+    "report/C_results_evaluation.md": "3a0f6ad172d112dafecbff21220932abea8acdfe6fba1c3ffafe84dab2e4c427",
+    "shared/synthetic_v2/stage_costs.json": "69fa3fe64fb86c3d0972142b7509ea40fdd499f5e8b19a6041e311a3a7726dcc",
+    "shared/synthetic_v2/g4/report.json": "294351fef92936fcd3a379c3647b4150e96dcd672fbcd3dea6f49ab42af18e9d",
+    "shared/synthetic_v2/g4/prediction_index.json": "34279649dcc3b9942398fd3e0c0a2f88475349c1c18c912de57e5759ce0b2271",
+    "shared/synthetic_v2/g4/delivery.json": "a591aae4b8281c9a7d41a8dac3c4d622b0fc9dfe1783b6daae19c9f56f138975",
+    "shared/synthetic_v2/c_evaluation/tables/07_g4_summary.csv": "a82de2c567a58b38396d4c947c1913d131b7b3bf633a2c714de2900942273e76",
+    "shared/synthetic_v2/c_evaluation/tables/08_g4_per_class.csv": "90da9fc3353fa5440860e002cb19c75f9d2ad23232cc82c3522bd460a025227d",
+    "shared/synthetic_v2/c_evaluation/tables/12_g4_cost_summary.csv": "9247c440c427e10059806aa57fb741902b42cf8b69ba8c759bc16d086ec0f167",
+    "shared/synthetic_v2/c_evaluation/tables/13_g4_direct_comparisons.csv": "5e0611260912511aec76dbdce4e08209ed88fd2989402f474f06e4ba28d864e7",
+    "shared/synthetic_v2/c_evaluation/figures/10_g4_accuracy.png": "0120888e4b9e9c633c0ed5ee4c8da99d37b519743c329945081bba714c92c45f",
+    "shared/synthetic_v2/c_evaluation/figures/11_g4_paired_gain.png": "d5b057eeac852175399a2c49209db3f75604040bfba6fd8cc3c91e25bf17f13f",
+    "shared/synthetic_v2/c_evaluation/figures/13_g4_direct_comparisons.png": "a71586971854d06f387d777ffda695a6adf0acb710d32ecd4db4a7d59d2e3aea",
+    "shared/synthetic_v2/c_evaluation/figures/14_g4_per_class_gain.png": "c7b0cd8e861f1f7dcbbd4a00bab47045e4b33106e61db345b5fda9720b5fa4b2"
+  },
+  "protected_sha256": {
+    "code/a_protocol.py": "120d4811e6fb25a1c54d7b2694dc1cb598782a04a8a1bdb4a3338994fa045405",
+    "code/a_runtime.py": "0f32dc8d6c18650a9eb25c4406348b884af9ee3ad8aecd832bff461788472742",
+    "code/classifier.py": "2047e236c48cbaec3a7cdb777599e047c0ff04e7cf8a418cc0942ff369e86bc0",
+    "code/data_features.py": "61ec30afae7abdf005a47c6d27425cebf16692b8c58922ee5bd4c508e4ca27a6",
+    "code/evaluation.py": "198d516bf076237de7a170e4030ee54dcbb45dc2907eb02e83f67aa31638e43a",
+    "code/formal.py": "055835b896f702e66467257170450afd46878524664b3f91c258ea08235cd45f",
+    "code/selection.py": "bdf8ac7cb9868ac28e16c1b34f76486844daa0493a173517dcbb96527af6b0e3",
+    "code/smoke.py": "f70b3bb4cd0b72181b0fd804cd2da9d6992888436f864efe3ef13280a71a7989",
+    "code/test_a_protocol.py": "9f48b5e9d66af96bd9f50cf6fa0c0d4d085b77a047850243f98368bb77251a55",
+    "code/test_g2.py": "035ff3a63875e52ce65acad8f589d339665624857bb65bac451c0cb5a87f8006",
+    "code/test_g3.py": "6fcf3505c13ca39e10999a34e7b7584061464b4be8e1fd5fecfd1d2083f98675",
+    "code/toolkit.py": "0bfc67c38b638edf3d5d707c1e887e43f4141b64a4ed0b2fa0da39e5499b9091",
+    "configs/study.json": "856531ef74e533060ad7146cc41208242b0a9b8d84c769342b34312b1e33e707",
+    "shared/synthetic_v2/models/frozen.json": "a608c3dc8c2c6f190e4a2293c346e5ecc3ae2ba45e057123aac5108ea4e4f34e"
+  },
+  "limits": [
+    "No model training, image generation, GPU inference or parameter changes.",
+    "Shared test truth consistency checked, not independently redownloaded CIFAR test labels.",
+    "3 seeds; sample SD is not a confidence interval or significance test.",
+    "Existing B strict feature mismatch remains unresolved globally.",
+    "No human annotations or non-author trial performed by this review."
+  ]
+}

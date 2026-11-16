@@ -12,6 +12,7 @@
 - [G4 正式预测与运行记录](shared/synthetic_v2/g4/README.md)：原始数据与运行证据。
 - [C 正式分析、CSV 和四张结果图](shared/synthetic_v2/c_evaluation/README.md)及[英文结果稿](report/C_results_evaluation.md)：已验收的统计交付，D 可接手统稿与展示。
 - [B 独立复核](shared/b_v04_review/README.md)与 [C 选择/统计规则审计](shared/synthetic_v2/c_independent_audit.md)：已合并的队友成果；B 数值差异和原阈值保留，C 的真实预测分析与图表见下方结果入口。
+- [B 对 C 正式 G4 统计的交叉复核](shared/b_c_g4_review/README.md)：PR #5 已实际复跑验收，16万条预测及四表250个数值项核对通过；原严格特征复现限制保留。
 - [团队分工](分工.md)：A–D 工作包及必须交出的产物；具体成员认领和实际完成情况仍以 progress.md 为准。
 
 本文件只用于入门导航；详细协议只维护在 agent.md，运行状态只维护在 progress.md。

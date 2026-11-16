@@ -1,0 +1,10 @@
+{
+  "protected_and_reviewed_inputs_unchanged": true,
+  "existing_protocol_tests": {
+    "count": 21,
+    "result": "pass",
+    "command": ".venv/Scripts/python.exe -m unittest discover -s code -p test*.py"
+  },
+  "four_pngs_visually_inspected": true,
+  "plot_review": "Labels, signs, per-seed dots and sample-SD interpretation checked against recomputed numbers; no independent image regeneration claimed."
+}

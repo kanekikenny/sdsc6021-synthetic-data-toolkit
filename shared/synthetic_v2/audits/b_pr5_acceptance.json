@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "status": "accepted",
+  "checked_utc": "2026-11-16T03:03:27.284450+00:00",
+  "pr_number": 5,
+  "pr_url": "https://github.com/kanekikenny/sdsc6021-synthetic-data-toolkit/pull/5",
+  "author": "careless-Snow",
+  "reviewed_head_sha": "d2ebe919c865aff527958bc87e98c2be48c21a90",
+  "input_repository_commit": "c70765015273bfbe4bf5bac859793c77bd497a65",
+  "review_script_sha256": "421ea86274d4b5ae2d167c2a554b8af79b2d9c5da90509f93cb58c0cb324ee5d",
+  "actual_command": [
+    ".venv/Scripts/python.exe",
+    "runs/_cache/pr5_review/submitted/code/reviews/review_c_g4.py",
+    "--repo",
+    ".",
+    "--bundle",
+    "runs/_cache/g4_public_download/g4_predictions_and_run_records.zip",
+    "--out",
+    "runs/_cache/pr5_review/rerun"
+  ],
+  "exit_code": 0,
+  "rerun_log_sha256": "e38e5c3dc6f09c9733529a90ff3eb03ce963d499b6a0e290ded6670515fad7ca",
+  "environment": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+    "dependencies": "standard library only"
+  },
+  "rows_verified": 160000,
+  "prediction_files": 16,
+  "c_table_rows": 64,
+  "c_table_numeric_cells": 250,
+  "table_checks": {
+    "07_g4_summary.csv": {
+      "rows": 5,
+      "numeric_cells": 20,
+      "decimal_places": 4,
+      "max_absolute_rounding_error": 4.681288428864949e-05,
+      "status": "pass"
+    },
+    "08_g4_per_class.csv": {
+      "rows": 50,
+      "numeric_cells": 200,
+      "decimal_places": 3,
+      "max_absolute_rounding_error": 0.0004791385931959269,
+      "status": "pass"
+    },
+    "13_g4_direct_comparisons.csv": {
+      "rows": 4,
+      "numeric_cells": 20,
+      "decimal_places": 4,
+      "max_absolute_rounding_error": 3.3333333331057174e-05,
+      "status": "pass"
+    },
+    "12_g4_cost_summary.csv": {
+      "rows": 5,
+      "numeric_cells": 10,
+      "decimal_places": 4,
+      "max_absolute_rounding_error": 4.497833337513413e-05,
+      "status": "pass"
+    }
+  },
+  "negative_controls": {
+    "wrong_seed_pairing": "rejected_as_expected",
+    "population_sd": "rejected_as_expected"
+  },
+  "submitted_full_precision_csv_comparison": [
+    {
+      "file": "summary.csv",
+      "rows": 5,
+      "all_cells_identical": true
+    },
+    {
+      "file": "per_class.csv",
+      "rows": 50,
+      "all_cells_identical": true
+    },
+    {
+      "file": "contrasts.csv",
+      "rows": 4,
+      "all_cells_identical": true
+    }
+  ],
+  "submitted_per_run_json_matches_rerun": true,
+  "c_inputs_and_protected_frozen_files_unchanged": true,
+  "all_16_original_g4_prediction_hashes_unchanged": true,
+  "human_annotation_records_unchanged": true,
+  "old_b_feature_numerical_evidence_unchanged": true,
+  "scope": "Rerun of the exact submitted independent statistics script against released stored predictions; no GPU inference, training or generation.",
+  "limits": [
+    "Original B strict CPU/GPU feature mismatch remains a failed check.",
+    "Three-seed comparisons remain descriptive; no significance claim.",
+    "No second human annotation or non-author trial completed by this review.",
+    "Submitted script review.json command is a fixed example; actual A invocation is recorded separately above.",
+    "Frozen source bytes and configuration unchanged; existing core tests were not repeated for this standalone review addition."
+  ],
+  "execution_cwd": ".",
+  "command_paths_relative_to_repository": true
+}
