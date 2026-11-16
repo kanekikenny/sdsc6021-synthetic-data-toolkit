@@ -1,8 +1,7 @@
 {
   "schema_version": 1,
   "status": "in_progress",
-  "current_step": "awaiting_participant_result_location_and_feedback",
-  "checked_at": "2026-11-16T19:30:08.5608643+08:00",
+  "checked_at": "2026-11-16T19:35:57.5027712+08:00",
   "participant_name_or_alias": "test",
   "non_author_confirmed": true,
   "identity_basis": "participant_self_report",
@@ -48,10 +47,22 @@
   "exit_method": "not_observed",
   "observed_issue": "After successful computation, shutdown waited on a Transformers automatic safetensors conversion/download thread; process later ended. Exit method was not captured and transcript has not fully closed.",
   "evidence_scope": "Report, five model hashes and frozen source hashes verified. Original console logs retained locally. Follow-up stack capture failed because the process was gone. Prepared model/data cache and feature reuse mean this was not a cold-install or unassisted trial.",
-  "remaining_tasks": [
-    "Participant locates output and describes the result",
-    "Participant provides actual usability feedback",
-    "Close transcript and record end time and duration"
+  "formal_results_changed": false,
+  "feedback_received": [
+    {
+      "received_at": "2026-11-16T19:35:57.5027712+08:00",
+      "source": "user_message_in_trial_conversation",
+      "quote": "看不懂",
+      "context": "Asked to open the smoke JSON report and understand development_results.",
+      "participant_attribution": "not_explicitly_confirmed",
+      "interpretation": "Result understanding was not demonstrated; do not record independent interpretation success."
+    }
   ],
-  "formal_results_changed": false
+  "result_interpretation_status": "not_demonstrated",
+  "current_step": "awaiting_transcript_closure_and_intake",
+  "remaining_tasks": [
+    "Stop and preserve the continuation transcript",
+    "Record observed end time and elapsed wall-clock duration, with assistance and waiting included",
+    "Finalize trial as assisted computation success with result understanding not demonstrated and CLI exit unverified"
+  ]
 }
